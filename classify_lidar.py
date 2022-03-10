@@ -50,13 +50,13 @@ fig, ax = plt.subplots(1, figsize = (10, 10))
 plt.imshow(intensity, cmap= 'viridis')
 plt.title("LiDAR Intensity", fontsize= 22)
 plt.colorbar()
-plt.savefig(basedir + "/lidar_medium/Intensity plot of Gulfport with noise.png")
+plt.savefig(basedir + "/Intensity plot of Gulfport with noise.png")
 plt.close()
 
 
 # Plot Histogram of Intensity
 plt.hist(intensity, bins= 100)
-plt.savefig(basedir +"/lidar_medium/Histogram of Intensity of Gulfport.png")
+plt.savefig(basedir +"/Histogram of Intensity of Gulfport.png")
 plt.close('all')
 
 
@@ -66,7 +66,7 @@ fig, ax = plt.subplots(1, figsize = (10, 10))
 plt.imshow(intensity, cmap= 'viridis')
 plt.title("LiDAR Intensity", fontsize= 22)
 plt.colorbar()
-plt.savefig(basedir +"/lidar_medium/Intensity plot of Gulfport without noise.png")
+plt.savefig(basedir +"/Intensity plot of Gulfport without noise.png")
 plt.close('all')
 
 # Plot the Height
@@ -74,12 +74,12 @@ fig, ax = plt.subplots(1, figsize = (10, 10))
 plt.imshow(height, cmap= 'viridis')
 plt.title("LiDAR Height", fontsize= 22)
 plt.colorbar()
-plt.savefig(basedir + "/lidar_medium/Height plot of Gulfport.png")
+plt.savefig(basedir + "/Height plot of Gulfport.png")
 plt.close('all')
 
 # Plot Histogram of Height
 plt.hist(height, bins= 40)
-plt.savefig(basedir +"/lidar_medium/Histogram of Height of Gulfport.png")
+plt.savefig(basedir +"/Histogram of Height of Gulfport.png")
 plt.close('all')
 
 
@@ -139,7 +139,7 @@ for i in a:
 
 fig.legend()
 fig.suptitle("Histogram of height of different landcover classes", fontsize= 36)
-plt.savefig(basedir + "/lidar_medium/"+"/Gulfport_StackedHeight.png")
+plt.savefig(basedir +"/Gulfport_StackedHeight.png")
 plt.close()
 
 # Intensity of different Classes
@@ -166,7 +166,7 @@ for i in a:
 
 fig.legend()
 fig.suptitle("Histogram of Intensity of different landcover classes", fontsize= 36)
-plt.savefig(basedir + "/lidar_medium/"+"/Gulfport_StackedIntensity.png")
+plt.savefig(basedir +"/Gulfport_StackedIntensity.png")
 plt.close()
 
 # Reshape LiDAR data (3D into 2D)
@@ -210,5 +210,5 @@ cm = np.round(cm, 3)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=class_names)
 
 disp.plot()
-plt.savefig(basedir + "/lidar_medium/"+"/KNN_Confusion_Matrix for Gulfport.png")
+plt.savefig(basedir + "/KNN_Confusion_Matrix for Gulfport.png")
 plt.close()
