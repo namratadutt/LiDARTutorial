@@ -170,7 +170,7 @@ plt.savefig(basedir +"/Gulfport_StackedIntensity.png")
 plt.close()
 
 # Reshape LiDAR data (3D into 2D)
-z = z.reshape(325*220,2)
+z = z.reshape((325*220,2))
 # Reshape Ground Truth
 truth = truth.flatten()
 
