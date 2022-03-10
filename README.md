@@ -1,6 +1,6 @@
 <img src="title.png" ></img>
 # LiDARTutorial
-#### A brief tutorial on LiDAR visualisation and classification
+### A brief tutorial on LiDAR visualisation and classification
 
 #### Steps to Run:
 
